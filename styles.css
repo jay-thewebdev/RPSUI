@@ -1,0 +1,58 @@
+body {
+    background-color: lightseagreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    opacity: 1;
+    transition-property: all;
+    transition: all 2s ease;
+    
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 80px;
+    transition: 100ms;
+}
+
+.selection:hover {
+    transform: scale(1.4)
+}
+
+.results {
+    margin-top: 1rem;
+    display : grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: 40px;
+    color: darkslateblue;
+}
+
+.result-selection {
+
+    opacity: .5;
+
+
+}
+
+.result-selection.winner {
+
+    opacity: 1;
+    font-size: 60px;
+}
