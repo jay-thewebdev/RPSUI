@@ -2,6 +2,14 @@ const selectionButtons =  document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column')
 const computerScoreSpan = document.querySelector('[data-computer-score')
 const yourScoreSpan = document.querySelector('[data-your-score')
+const sciss = new Audio();
+      sciss.src = "./scissors.mp3";
+      
+const thud = new Audio();
+      thud.src = "./rock.mp3";
+
+      const pape = new Audio();
+      pape.src = "./paper.mp3";
 const SELECTIONS = [
     {
         name:'rock',
@@ -39,9 +47,6 @@ function makeSelection(selection) {
 
     if (yourWinner) incrementScore(yourScoreSpan);
     if (computerWinner) incrementScore (computerScoreSpan); 
-
-    
-    
 
 }
 
