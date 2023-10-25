@@ -10,6 +10,11 @@ const thud = new Audio();
 
       const pape = new Audio();
       pape.src = "./paper.mp3";
+
+      const ding = new Audio();
+      ding.src = "./ding.mp3";
+
+
 const SELECTIONS = [
     {
         name:'rock',
@@ -51,7 +56,8 @@ function makeSelection(selection) {
 }
 
 function incrementScore(scoreSpan) {
-    scoreSpan.innerText= parseInt(scoreSpan.innerText) + 1
+    scoreSpan.innerText= parseInt(scoreSpan.innerText) + 1;
+    setTimeout("ding.play()", 1000 );
 }
 
 function addSelectionResult(selection, winner) {
